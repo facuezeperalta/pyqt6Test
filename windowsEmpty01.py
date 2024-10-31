@@ -4,13 +4,13 @@ from PyQt6.QtWidgets import QApplication, QWidget
 class VentanaVacia(QWidget):
 
     #defino el constructor del objeto
-    def __init__():
+    def __init__(self):
         super().__init__()
         self.incializarUI()
     
     def incializarUI(self):
         self.setGeometry(100,100,250,250) #recibe parametros que son el tamaño de la ventana son 4, posición en X e Y. Luego ancho y largo en pixeles.
-        self.windowTitle("Mi primera ventana")
+        self.setWindowTitle("Mi Primera Ventana")
         self.show() #con este método visualizamos la ventana
         
 
